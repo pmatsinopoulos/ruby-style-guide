@@ -547,6 +547,7 @@ syntax.
     lambda = ->(a, b) { a + b }
     lambda.(1, 2)
     ```
+  _Comment by Nikos D. : Under review_
 
 * Use `_` for unused block parameters.
 
