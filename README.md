@@ -662,9 +662,13 @@ _Comment by Nikos D. : Under review_
 
 * When designing class hierarchies make sure that they conform to the
   [Liskov Substitution Principle](http://en.wikipedia.org/wiki/Liskov_substitution_principle).
+    _Comment by Nikos D. : Under review whether such generic programming principles
+    should be included in a language specific style guide_
 * Try to make your classes as
   [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design\))
   as possible.
+    _Comment by Nikos D. : Under review whether such generic programming principles
+    should be included in a language specific style guide_
 * Always supply a proper `to_s` method for classes that represent
   domain objects.
 
