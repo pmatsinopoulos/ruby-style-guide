@@ -251,12 +251,30 @@ You can generate a PDF or an HTML copy of this guide using
     end
     ```
 
-* Favor the ternary operator(`?:`) over `if/then/else/end` constructs.
+* Favor the ternary operator(`?:`) over one liner `if/then/else/end` constructs.
   It's more common and obviously more concise.
 
     ```Ruby
     # bad
+    if some_condition then something else something_else end
+
+    # good
+    some_condition ? something : something_else
+    ```
+
+* Favor the ternary operator(`?:`) over `if/then/else/end` constructs
+  for assignments. It's more common and obviously more concise.
+
+    ```Ruby
+    # bad
     result = if some_condition then something else something_else end
+
+    # bad
+    result = if some_condition
+               something
+             else
+               something_else
+             end
 
     # good
     result = some_condition ? something : something_else
@@ -268,14 +286,14 @@ You can generate a PDF or an HTML copy of this guide using
 
     ```Ruby
     # bad
-    some_condition ? (nested_condition ? nested_something : nested_something_else) : something_else
+    result = some_condition ? (nested_condition ? nested_something : nested_something_else) : something_else
 
     # good
-    if some_condition
-      nested_condition ? nested_something : nested_something_else
-    else
-      something_else
-    end
+    result = if some_condition
+               nested_condition ? nested_something : nested_something_else
+             else
+               something_else
+             end
     ```
 
 * Never use `if x: ...` - it is removed in Ruby 1.9. Use
