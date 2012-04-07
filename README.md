@@ -158,6 +158,7 @@ You can generate a PDF or an HTML copy of this guide using
     ```
 
 * Align the parameters of a method call if they span over multiple lines.
+  _Comment by Nikos D. : Ruby 1.9 hash syntax is under review_
 
     ```Ruby
     # starting point (line is too long)
@@ -525,6 +526,7 @@ you if you forget either of the rules above!
 
 * When the keys of your hash are symbols use the Ruby 1.9 hash literal
 syntax.
+  _Comment by Nikos D. : Ruby 1.9 hash syntax is under review_
 
     ```Ruby
     # bad
@@ -961,10 +963,12 @@ strings.
     # good
     hash = { one: 1, two: 2, three: 3 }
     ```
+  _Comment by Nikos D. : Ruby 1.9 hash syntax is under review_
 
 * Avoid the use of mutable object as hash keys.
 * Use the new 1.9 literal hash syntax in preference to the hashrocket
 syntax.
+  _Comment by Nikos D. : Ruby 1.9 hash syntax is under review_
 
     ```Ruby
     # bad
