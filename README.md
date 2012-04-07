@@ -558,6 +558,7 @@ syntax.
     # good
     result = hash.map { |_, v| v + 1 }
     ```
+  _Comment by Nikos D. : Review this one since we are using GetText `_` in our code!_
 
 ## Naming
 
