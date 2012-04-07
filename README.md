@@ -792,9 +792,12 @@ in accordance with their intended usage. Don't go off leaving
 everything `public` (which is the default). After all we're coding
 in *Ruby* now, not in *Python*.
 * Indent the `public`, `protected`, and `private` methods as much the
-  method definitions they apply to. Leave one blank line above them.
+  method definitions they apply to. Leave one blank line above them
+  and one below them and put one more line with `######` on each side.
+  This helps with visibility when quickly scanning a file.
 
     ```Ruby
+    # bad
     class SomeClass
       def public_method
         # ...
@@ -805,6 +808,47 @@ in *Ruby* now, not in *Python*.
         # ...
       end
     end
+
+    # bad
+    class SomeClass
+      def public_method
+        # ...
+      end
+
+      private
+
+      def private_method
+        # ...
+      end
+    end
+
+    # bad
+    class SomeClass
+      def public_method
+        # ...
+      end
+
+      private
+        def private_method
+          # ...
+        end
+    end
+
+    # good
+    class SomeClass
+      def public_method
+        # ...
+      end
+
+      #######
+      private
+      #######
+
+      def private_method
+        # ...
+      end
+    end
+    ```
 
 * Use `def self.method` to define singleton methods. This makes the methods
   more resistant to refactoring changes.
