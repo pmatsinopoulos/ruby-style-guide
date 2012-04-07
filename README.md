@@ -77,6 +77,7 @@ You can generate a PDF or an HTML copy of this guide using
     end
     ```
 
+* Never use tabs
 * Use Unix-style line endings. (*BSD/Solaris/Linux/OSX users are covered by default,
   Windows users have to be extra careful.)
     * If you're using Git you might want to add the following
