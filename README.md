@@ -464,15 +464,14 @@ You can generate a PDF or an HTML copy of this guide using
     While several Ruby books suggest the first style, the second is much more prominent
     in practice (and arguably a bit more readable).
 
-* Avoid line continuation (\\) where not required. In practice, avoid using
-  line continuations at all.
+* Avoid using line continuations at all.
 
     ```Ruby
     # bad
     result = 1 - \
              2
 
-    # good (but still ugly as hell)
+    # bad
     result = 1 \
              - 2
     ```
