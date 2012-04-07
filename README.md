@@ -618,6 +618,8 @@ syntax.
 
 ## Annotations
 
+_Comment by Nikos D. : Under review_
+
 * Annotations should usually be written on the line immediately above
   the relevant code.
 * The annotation keyword is followed by a colon and a space, then a note
