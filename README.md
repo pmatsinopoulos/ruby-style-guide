@@ -1312,6 +1312,9 @@ patch them.)
     ```
 
 * Avoid `alias` when `alias_method` will do.
+  See [this blog post](http://blog.bigbinary.com/2012/01/08/alias-vs-alias-method.html)
+  and [this question on StackOverflow](http://stackoverflow.com/questions/4763121/ruby-should-i-use-alias-or-alias-method)
+  for the differences between the two.
 * Use `OptionParser` for parsing complex command line options and
 `ruby -s` for trivial command line options.
 * Code in a functional way, avoiding mutation when that makes sense.
