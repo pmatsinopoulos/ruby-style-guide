@@ -192,11 +192,17 @@ You can generate a PDF or an HTML copy of this guide using
                      body: source.text)
     end
     ```
-
-* Use RDoc and its conventions for API documentation.  Don't put an
-  empty line between the comment block and the `def`.
 * Keep lines fewer than 80 characters.
 * Avoid trailing whitespace.
+
+## Documentation
+
+* Use [YARD](http://yardoc.org/) and its conventions for API documentation.
+* Use [reference tags](http://rubydoc.info/docs/yard/file/docs/GettingStarted.md#List_of_Tags)
+  like `@param`, `@return`, `@option`, `@raise`, `see`, `@note`, etc.
+  See [the list of available tags](http://rubydoc.info/docs/yard/file/docs/Tags.md#taglist)
+  for inspiration.
+* Don't put an empty line between the comment block and the `def`.
 
 ## Syntax
 
