@@ -328,7 +328,19 @@ You can generate a PDF or an HTML copy of this guide using
     document.saved? or document.save!
     ```
 
-* Avoid multi-line `?:` (the ternary operator), use `if/unless` instead.
+* Don't let usage of ternary operator create lengthy lines.
+
+  ```Ruby
+  # bad
+  lengthy_result_name = lengthy_variable_name == even_more_lengthy_variable_name ? some_result : some_other_result
+
+  # good
+    lengthy_result_name = lengthy_variable_name == even_more_lengthy_variable_name ?
+            some_result :
+            some_other_result
+  ```
+
+  Even better, avoid multi-line `?:` (the ternary operator) and use `if/unless` instead.
 
 * Favor modifier `if/unless` usage when you have a single-line
   body. Another good alternative is the usage of control flow `and/or`.
