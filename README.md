@@ -937,6 +937,8 @@ block.
   
 * Favor the use of exceptions for the standard library over
 introducing new exception classes.
+  _Comment by Nikos D. : Under review.
+  Why? Rationale? Domain specific exceptions are better that generic ones!_
 
 ## Collections
 
