@@ -1216,6 +1216,7 @@ patch them.)
 
 * Write `ruby -w` safe code.
 * Avoid hashes as optional parameters. Does the method do too much?
+  _Comment by Nikos D. : Fucking disagree!_
 * Avoid methods longer than 10 LOC (lines of code). Ideally, most methods will be shorter than
   5 LOC. Empty lines do not contribute to the relevant LOC.
 * Avoid parameter lists longer than three or four parameters.
