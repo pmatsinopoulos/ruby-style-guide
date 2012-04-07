@@ -1228,6 +1228,7 @@ patch them.)
   _Comment by Nikos D. : Fucking disagree!_
 * Avoid methods longer than 10 LOC (lines of code). Ideally, most methods will be shorter than
   5 LOC. Empty lines do not contribute to the relevant LOC.
+  _Comment by Nikos D. : Maybe this is two hard. Not sure about it..._
 * Avoid parameter lists longer than three or four parameters.
 * If you really have to, add "global" methods to Kernel and make them private.
 * Use class instance variables instead of global variables.
