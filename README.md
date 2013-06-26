@@ -652,6 +652,23 @@ syntax.
 * Use other custom annotation keywords if it feels appropriate, but be
   sure to document them in your project's `README` or similar.
 
+## Modules
+
+* When calling a `self` method on a module use `.` instead of `::`.
+
+    ```Ruby
+    module Foo
+      def self.foo
+      end
+    end
+
+    # bad
+    Foo::foo
+
+    # good
+    Foo.foo
+    ```
+
 ## Classes
 
 * When designing class hierarchies make sure that they conform to the
